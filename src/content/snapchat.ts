@@ -50,21 +50,40 @@ function removeHide(): void {
 }
 
 function hideLabeledNavs(): void {
-  document.querySelectorAll('span').forEach((span) => {
+  document.querySelectorAll<HTMLSpanElement>('span').forEach((span) => {
     const text = span.textContent?.trim().toLowerCase();
     if (!text || !BLOCKED_NAV_LABELS.includes(text)) return;
 
+    // Hide the nearest sibling button (the icon) + the label wrapper together.
+    const labelWrapper = span.parentElement;
+    if (labelWrapper) {
+      const iconSibling =
+        labelWrapper.previousElementSibling ?? labelWrapper.nextElementSibling;
+      if (iconSibling && iconSibling.tagName === 'BUTTON') {
+        (iconSibling as HTMLElement).classList.add('nms-nav-hidden');
+      }
+      labelWrapper.classList.add('nms-nav-hidden');
+    }
+
+    // Walk up and hide the full nav-item container — whichever ancestor
+    // contains both a button and the label.
     let cursor: HTMLElement | null = span.parentElement;
-    for (let i = 0; cursor && i < 5; i++) {
-      if (cursor.querySelector('button') && cursor.querySelector('svg')) {
+    for (let i = 0; cursor && i < 10; i++) {
+      const hasButton = cursor.querySelector('button, [role="button"]');
+      const hasSvg = cursor.querySelector('svg');
+      if (hasButton || hasSvg) {
         cursor.classList.add('nms-nav-hidden');
-        return;
+        // Keep climbing one more level to catch the outer wrapper too.
+        if (cursor.parentElement) {
+          const parent = cursor.parentElement;
+          if (parent.childElementCount <= 2) {
+            parent.classList.add('nms-nav-hidden');
+          }
+        }
+        break;
       }
       cursor = cursor.parentElement;
     }
-
-    const outer = span.closest('div');
-    outer?.classList.add('nms-nav-hidden');
   });
 }
 
