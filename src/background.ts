@@ -252,6 +252,11 @@ chrome.alarms.onAlarm.addListener(async (alarm) => {
   }
 });
 
-chrome.runtime.onInstalled.addListener(() => {
+chrome.runtime.onInstalled.addListener((details) => {
   console.log('[No More Slop] installed');
+  if (details.reason === 'install') {
+    chrome.tabs.create({
+      url: chrome.runtime.getURL('src/welcome/welcome.html'),
+    });
+  }
 });

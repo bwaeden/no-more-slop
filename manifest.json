@@ -85,7 +85,7 @@
   ],
   "web_accessible_resources": [
     {
-      "resources": ["src/blocked/blocked.html"],
+      "resources": ["src/blocked/blocked.html", "src/welcome/welcome.html"],
       "matches": ["<all_urls>"]
     }
   ]

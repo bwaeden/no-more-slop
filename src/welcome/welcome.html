@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to No More Slop</title>
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem('nms-theme');
+          if (t === 'dark') {
+            document.documentElement.setAttribute('data-theme', 'dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <link rel="stylesheet" href="welcome.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="brand">
+          <span class="mark" aria-hidden="true">
+            <svg viewBox="0 0 100 100">
+              <rect x="22" y="10" width="56" height="80" rx="13" fill="currentColor"/>
+              <rect x="42" y="18" width="16" height="3" rx="1.5" fill="var(--mark-screen)"/>
+              <path d="M36 32 L64 72" stroke="var(--mark-screen)" stroke-width="11" stroke-linecap="round"/>
+              <path d="M64 32 L36 72" stroke="var(--mark-screen)" stroke-width="11" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span class="wordmark">No More Slop</span>
+        </div>
+      </header>
+
+      <section class="hero">
+        <h1>You're in.</h1>
+        <p>The slop is off. Click the extension in your toolbar — or press <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd> — to set your first intent.</p>
+      </section>
+
+      <section class="howto">
+        <h2>How it works</h2>
+        <ol>
+          <li><strong>Set an intent.</strong> What are you here to do? Type it. Or click <em>Just block slop</em> for no-task mode.</li>
+          <li><strong>Pick what to block.</strong> YouTube Shorts, Instagram Reels, TikTok, Snapchat, X, Reddit. All on by default.</li>
+          <li><strong>Get back to work.</strong> Try to slip into a feed and you'll get a toast reminding you why you're here.</li>
+        </ol>
+      </section>
+
+      <section class="howto">
+        <h2>Features worth knowing</h2>
+        <ul class="feature-list">
+          <li><strong>Strict mode</strong> — locks toggles and requires typing "end" to finish. No quick bypasses.</li>
+          <li><strong>Break mode</strong> — need a breather? Pick 5/10/15/30 min and get everything back for that window.</li>
+          <li><strong>Dark mode</strong> — the sun icon, top-right of the popup.</li>
+          <li><strong>Session summary</strong> — when you end a session, see duration and blocks caught.</li>
+        </ul>
+      </section>
+
+      <section class="support">
+        <h2>Support the project</h2>
+        <p>No More Slop is free and open source. If it's giving you your time back, consider leaving a tip.</p>
+
+        <a class="bmac" href="BMAC_URL_PLACEHOLDER" target="_blank" rel="noopener noreferrer">
+          <span class="bmac-emoji">☕</span>
+          <span>Buy me a coffee</span>
+        </a>
+
+        <details class="crypto">
+          <summary>
+            <span>Crypto tips</span>
+            <span class="chev">▾</span>
+          </summary>
+          <div class="crypto-list">
+            <div class="crypto-row">
+              <span class="crypto-label">BTC</span>
+              <code id="btc-addr">BTC_ADDRESS_PLACEHOLDER</code>
+              <button type="button" class="copy-btn" data-target="btc-addr">Copy</button>
+            </div>
+            <div class="crypto-row">
+              <span class="crypto-label">ETH</span>
+              <code id="eth-addr">ETH_ADDRESS_PLACEHOLDER</code>
+              <button type="button" class="copy-btn" data-target="eth-addr">Copy</button>
+            </div>
+            <div class="crypto-row">
+              <span class="crypto-label">SOL</span>
+              <code id="sol-addr">SOL_ADDRESS_PLACEHOLDER</code>
+              <button type="button" class="copy-btn" data-target="sol-addr">Copy</button>
+            </div>
+          </div>
+        </details>
+      </section>
+
+      <footer>
+        <span>Open source on <a href="https://github.com/bwaeden/no-more-slop" target="_blank" rel="noopener noreferrer">GitHub</a></span>
+      </footer>
+    </main>
+    <script type="module" src="welcome.ts"></script>
+  </body>
+</html>
