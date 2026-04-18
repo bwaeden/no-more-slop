@@ -46,6 +46,7 @@ const confirmEndButton = document.getElementById('confirm-end') as HTMLButtonEle
 const keepGoingButton = document.getElementById('keep-going') as HTMLButtonElement;
 
 const themeToggle = document.getElementById('theme-toggle') as HTMLButtonElement;
+const supportButton = document.getElementById('support-button') as HTMLButtonElement;
 
 const toggleInputs = document.querySelectorAll<HTMLInputElement>(
   '.platforms .switch input[data-platform]',
@@ -299,6 +300,12 @@ keepGoingButton.addEventListener('click', () => {
 themeToggle.addEventListener('click', async () => {
   const { theme } = await getState();
   await setTheme(theme === 'dark' ? 'light' : 'dark');
+});
+
+supportButton.addEventListener('click', () => {
+  chrome.tabs.create({
+    url: chrome.runtime.getURL('src/welcome/welcome.html'),
+  });
 });
 
 getState().then((state) => {
