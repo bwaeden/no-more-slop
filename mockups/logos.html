@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>No More Slop — logo mockups</title>
+<style>
+  :root {
+    --bg: #f6f3ec;
+    --surface: #ffffff;
+    --fg: #141414;
+    --muted: #7a756c;
+    --border: #e8e3d8;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 40px;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    -webkit-font-smoothing: antialiased;
+  }
+  h1 {
+    font-size: 28px;
+    letter-spacing: -0.02em;
+    margin: 0 0 4px;
+  }
+  .sub {
+    color: var(--muted);
+    margin: 0 0 24px;
+    font-size: 14px;
+  }
+  h2.section {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 32px 0 12px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 16px;
+  }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 18px;
+  }
+  .card-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 4px;
+  }
+  .card-title h3 {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .card-title .tag {
+    color: var(--muted);
+    font-size: 11px;
+    font-variant-numeric: tabular-nums;
+  }
+  .card p {
+    color: var(--muted);
+    font-size: 12.5px;
+    margin: 0 0 14px;
+    line-height: 1.45;
+  }
+  .previews {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+  .preview {
+    aspect-ratio: 1;
+    border-radius: 12px;
+    display: grid;
+    place-items: center;
+  }
+  .preview.light { background: #f6f3ec; border: 1px solid var(--border); }
+  .preview.dark { background: #141416; }
+  .preview svg { width: 58px; height: 58px; }
+  .small-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 12px;
+    padding: 8px 10px;
+    background: var(--bg);
+    border-radius: 10px;
+  }
+  .small-row svg { width: 16px; height: 16px; }
+  .small-row .name { font-size: 12.5px; font-weight: 600; letter-spacing: -0.01em; }
+  .small-row .caption { color: var(--muted); font-size: 10.5px; margin-left: auto; }
+  .preview.light svg { color: #1a1a1a; }
+  .preview.dark svg { color: #f6f3ec; }
+  .small-row svg { color: #1a1a1a; }
+
+  /* Color-branded variants */
+  .preview.colored-green { background: #e8f5e9; border: 1px solid #c8e6c9; }
+  .preview.colored-green svg { color: #2e7d32; }
+  .preview.colored-cream { background: #fff4e6; border: 1px solid #ffe0b2; }
+  .preview.colored-cream svg { color: #c2410c; }
+  .preview.colored-navy { background: #0f172a; }
+  .preview.colored-navy svg { color: #fbbf24; }
+  .preview.colored-mint { background: #e6fffa; border: 1px solid #b2f5ea; }
+  .preview.colored-mint svg { color: #0f766e; }
+</style>
+</head>
+<body>
+  <h1>No More Slop — logo mockups v2</h1>
+  <p class="sub">Round 1 (simple marks) + Round 2 (creative/branded). Pick any number. I'll lock it in and generate production PNG assets.</p>
+
+  <h2 class="section">Round 1 · Clean marks</h2>
+  <div class="grid">
+
+    <!-- 1: Pause -->
+    <div class="card">
+      <div class="card-title">
+        <h3>1 — Pause</h3>
+        <span class="tag">stop the scroll</span>
+      </div>
+      <p>Rounded square with pause bars. Familiar, confident, universally legible.</p>
+      <div class="previews">
+        <div class="preview light"><svg viewBox="0 0 100 100"><rect x="8" y="8" width="84" height="84" rx="22" fill="currentColor"/><rect x="36" y="28" width="10" height="44" rx="4" fill="#f6f3ec"/><rect x="54" y="28" width="10" height="44" rx="4" fill="#f6f3ec"/></svg></div>
+        <div class="preview dark"><svg viewBox="0 0 100 100"><rect x="8" y="8" width="84" height="84" rx="22" fill="currentColor"/><rect x="36" y="28" width="10" height="44" rx="4" fill="#141416"/><rect x="54" y="28" width="10" height="44" rx="4" fill="#141416"/></svg></div>
+      </div>
+      <div class="small-row"><svg viewBox="0 0 100 100"><rect x="8" y="8" width="84" height="84" rx="22" fill="currentColor"/><rect x="36" y="28" width="10" height="44" rx="4" fill="#f6f3ec"/><rect x="54" y="28" width="10" height="44" rx="4" fill="#f6f3ec"/></svg><span class="name">No More Slop</span><span class="caption">toolbar 16px</span></div>
+    </div>
+
+    <!-- 2: Feed fade -->
+    <div class="card">
+      <div class="card-title"><h3>2 — Feed fade</h3><span class="tag">block the scroll</span></div>
+      <p>Three stacked bars fading. Most literal — shows feed content vanishing.</p>
+      <div class="previews">
+        <div class="preview light"><svg viewBox="0 0 100 100"><rect x="8" y="8" width="84" height="84" rx="22" fill="currentColor"/><rect x="22" y="26" width="56" height="10" rx="5" fill="#f6f3ec"/><rect x="22" y="44" width="56" height="10" rx="5" fill="#f6f3ec" opacity="0.55"/><rect x="22" y="62" width="56" height="10" rx="5" fill="#f6f3ec" opacity="0.25"/></svg></div>
+        <div class="preview dark"><svg viewBox="0 0 100 100"><rect x="8" y="8" width="84" height="84" rx="22" fill="currentColor"/><rect x="22" y="26" width="56" height="10" rx="5" fill="#141416"/><rect x="22" y="44" width="56" height="10" rx="5" fill="#141416" opacity="0.55"/><rect x="22" y="62" width="56" height="10" rx="5" fill="#141416" opacity="0.25"/></svg></div>
+      </div>
+      <div class="small-row"><svg viewBox="0 0 100 100"><rect x="8" y="8" width="84" height="84" rx="22" fill="currentColor"/><rect x="22" y="26" width="56" height="10" rx="5" fill="#f6f3ec"/><rect x="22" y="44" width="56" height="10" rx="5" fill="#f6f3ec" opacity="0.55"/><rect x="22" y="62" width="56" height="10" rx="5" fill="#f6f3ec" opacity="0.25"/></svg><span class="name">No More Slop</span><span class="caption">toolbar 16px</span></div>
+    </div>
+
+    <!-- 4: Broken loop -->
+    <div class="card">
+      <div class="card-title"><h3>4 — Broken loop</h3><span class="tag">break the algorithm</span></div>
+      <p>Circle with a gap. Strong metaphor for breaking the doom-scroll.</p>
+      <div class="previews">
+        <div class="preview light"><svg viewBox="0 0 100 100"><path d="M50 14 a36 36 0 1 1 -25.46 10.54" fill="none" stroke="currentColor" stroke-width="11" stroke-linecap="round"/></svg></div>
+        <div class="preview dark"><svg viewBox="0 0 100 100"><path d="M50 14 a36 36 0 1 1 -25.46 10.54" fill="none" stroke="currentColor" stroke-width="11" stroke-linecap="round"/></svg></div>
+      </div>
+      <div class="small-row"><svg viewBox="0 0 100 100"><path d="M50 14 a36 36 0 1 1 -25.46 10.54" fill="none" stroke="currentColor" stroke-width="11" stroke-linecap="round"/></svg><span class="name">No More Slop</span><span class="caption">toolbar 16px</span></div>
+    </div>
+
+  </div>
+
+  <h2 class="section">Round 2 · Creative / memorable</h2>
+  <div class="grid">
+
+    <!-- 7: Broken infinity -->
+    <div class="card">
+      <div class="card-title"><h3>7 — Broken infinity</h3><span class="tag">endless scroll ends</span></div>
+      <p>Infinity symbol with a visible cut. Powerful metaphor — the endless feed has a break now.</p>
+      <div class="previews">
+        <div class="preview light"><svg viewBox="0 0 100 100"><path d="M22 50 Q22 30 42 30 Q52 30 58 50" fill="none" stroke="currentColor" stroke-width="10" stroke-linecap="round"/><path d="M42 50 Q36 70 22 70 Q22 70 22 70" fill="none" stroke="currentColor" stroke-width="10" stroke-linecap="round"/><path d="M62 50 Q68 30 78 30 Q78 70 62 70 Q52 70 44 50" fill="none" stroke="currentColor" stroke-width="10" stroke-linecap="round"/></svg></div>
+        <div class="preview dark"><svg viewBox="0 0 100 100"><path d="M22 50 Q22 30 42 30 Q52 30 58 50" fill="none" stroke="currentColor" stroke-width="10" stroke-linecap="round"/><path d="M42 50 Q36 70 22 70 Q22 70 22 70" fill="none" stroke="currentColor" stroke-width="10" stroke-linecap="round"/><path d="M62 50 Q68 30 78 30 Q78 70 62 70 Q52 70 44 50" fill="none" stroke="currentColor" stroke-width="10" stroke-linecap="round"/></svg></div>
+      </div>
+      <div class="small-row"><svg viewBox="0 0 100 100"><path d="M22 50 Q22 30 42 30 Q52 30 58 50" fill="none" stroke="currentColor" stroke-width="10" stroke-linecap="round"/><path d="M42 50 Q36 70 22 70 Q22 70 22 70" fill="none" stroke="currentColor" stroke-width="10" stroke-linecap="round"/><path d="M62 50 Q68 30 78 30 Q78 70 62 70 Q52 70 44 50" fill="none" stroke="currentColor" stroke-width="10" stroke-linecap="round"/></svg><span class="name">No More Slop</span><span class="caption">toolbar 16px</span></div>
+    </div>
+
+    <!-- 8: Swipe blocked -->
+    <div class="card">
+      <div class="card-title"><h3>8 — Swipe blocked</h3><span class="tag">tiktok gesture halted</span></div>
+      <p>Upward swipe arrow with a halt bar. References the short-form swipe gesture and blocks it.</p>
+      <div class="previews">
+        <div class="preview light"><svg viewBox="0 0 100 100"><rect x="8" y="8" width="84" height="84" rx="22" fill="currentColor"/><path d="M50 70 L50 38 M36 52 L50 38 L64 52" stroke="#f6f3ec" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/><rect x="26" y="24" width="48" height="6" rx="3" fill="#f6f3ec"/></svg></div>
+        <div class="preview dark"><svg viewBox="0 0 100 100"><rect x="8" y="8" width="84" height="84" rx="22" fill="currentColor"/><path d="M50 70 L50 38 M36 52 L50 38 L64 52" stroke="#141416" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/><rect x="26" y="24" width="48" height="6" rx="3" fill="#141416"/></svg></div>
+      </div>
+      <div class="small-row"><svg viewBox="0 0 100 100"><rect x="8" y="8" width="84" height="84" rx="22" fill="currentColor"/><path d="M50 70 L50 38 M36 52 L50 38 L64 52" stroke="#f6f3ec" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/><rect x="26" y="24" width="48" height="6" rx="3" fill="#f6f3ec"/></svg><span class="name">No More Slop</span><span class="caption">toolbar 16px</span></div>
+    </div>
+
+    <!-- 9: Pig snout pause -->
+    <div class="card">
+      <div class="card-title"><h3>9 — Pig snout</h3><span class="tag">leans into the name</span></div>
+      <p>Literal slop reference. Playful, meme-y. High memorability; lower "serious tool" signal.</p>
+      <div class="previews">
+        <div class="preview light"><svg viewBox="0 0 100 100"><rect x="8" y="8" width="84" height="84" rx="22" fill="currentColor"/><ellipse cx="50" cy="52" rx="28" ry="22" fill="#f6f3ec"/><ellipse cx="42" cy="52" rx="4" ry="6" fill="#141416"/><ellipse cx="58" cy="52" rx="4" ry="6" fill="#141416"/><path d="M24 36 L76 36" stroke="#f6f3ec" stroke-width="8" stroke-linecap="round"/></svg></div>
+        <div class="preview dark"><svg viewBox="0 0 100 100"><rect x="8" y="8" width="84" height="84" rx="22" fill="currentColor"/><ellipse cx="50" cy="52" rx="28" ry="22" fill="#141416"/><ellipse cx="42" cy="52" rx="4" ry="6" fill="#f6f3ec"/><ellipse cx="58" cy="52" rx="4" ry="6" fill="#f6f3ec"/><path d="M24 36 L76 36" stroke="#141416" stroke-width="8" stroke-linecap="round"/></svg></div>
+      </div>
+      <div class="small-row"><svg viewBox="0 0 100 100"><rect x="8" y="8" width="84" height="84" rx="22" fill="currentColor"/><ellipse cx="50" cy="52" rx="28" ry="22" fill="#f6f3ec"/><ellipse cx="42" cy="52" rx="4" ry="6" fill="#141416"/><ellipse cx="58" cy="52" rx="4" ry="6" fill="#141416"/><path d="M24 36 L76 36" stroke="#f6f3ec" stroke-width="8" stroke-linecap="round"/></svg><span class="name">No More Slop</span><span class="caption">toolbar 16px</span></div>
+    </div>
+
+    <!-- 10: Noise to focus -->
+    <div class="card">
+      <div class="card-title"><h3>10 — Noise → focus</h3><span class="tag">reduction to one point</span></div>
+      <p>Three chaotic bars collapse into a single dot. Visual story of distillation.</p>
+      <div class="previews">
+        <div class="preview light"><svg viewBox="0 0 100 100"><rect x="8" y="8" width="84" height="84" rx="22" fill="currentColor"/><rect x="16" y="30" width="22" height="6" rx="3" fill="#f6f3ec" opacity="0.4"/><rect x="16" y="46" width="16" height="6" rx="3" fill="#f6f3ec" opacity="0.6"/><rect x="16" y="62" width="26" height="6" rx="3" fill="#f6f3ec" opacity="0.3"/><path d="M44 50 L58 50" stroke="#f6f3ec" stroke-width="3" stroke-linecap="round" opacity="0.7"/><circle cx="72" cy="50" r="10" fill="#f6f3ec"/></svg></div>
+        <div class="preview dark"><svg viewBox="0 0 100 100"><rect x="8" y="8" width="84" height="84" rx="22" fill="currentColor"/><rect x="16" y="30" width="22" height="6" rx="3" fill="#141416" opacity="0.4"/><rect x="16" y="46" width="16" height="6" rx="3" fill="#141416" opacity="0.6"/><rect x="16" y="62" width="26" height="6" rx="3" fill="#141416" opacity="0.3"/><path d="M44 50 L58 50" stroke="#141416" stroke-width="3" stroke-linecap="round" opacity="0.7"/><circle cx="72" cy="50" r="10" fill="#141416"/></svg></div>
+      </div>
+      <div class="small-row"><svg viewBox="0 0 100 100"><rect x="8" y="8" width="84" height="84" rx="22" fill="currentColor"/><rect x="16" y="30" width="22" height="6" rx="3" fill="#f6f3ec" opacity="0.4"/><rect x="16" y="46" width="16" height="6" rx="3" fill="#f6f3ec" opacity="0.6"/><rect x="16" y="62" width="26" height="6" rx="3" fill="#f6f3ec" opacity="0.3"/><path d="M44 50 L58 50" stroke="#f6f3ec" stroke-width="3" stroke-linecap="round" opacity="0.7"/><circle cx="72" cy="50" r="10" fill="#f6f3ec"/></svg><span class="name">No More Slop</span><span class="caption">toolbar 16px</span></div>
+    </div>
+
+    <!-- 11: Phone with feed removed -->
+    <div class="card">
+      <div class="card-title"><h3>11 — Empty phone</h3><span class="tag">feed has left the building</span></div>
+      <p>Phone outline with a single checkmark where the feed used to be. Object-specific clarity.</p>
+      <div class="previews">
+        <div class="preview light"><svg viewBox="0 0 100 100"><rect x="28" y="14" width="44" height="72" rx="8" fill="none" stroke="currentColor" stroke-width="6"/><path d="M40 50 L46 56 L60 42" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg></div>
+        <div class="preview dark"><svg viewBox="0 0 100 100"><rect x="28" y="14" width="44" height="72" rx="8" fill="none" stroke="currentColor" stroke-width="6"/><path d="M40 50 L46 56 L60 42" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg></div>
+      </div>
+      <div class="small-row"><svg viewBox="0 0 100 100"><rect x="28" y="14" width="44" height="72" rx="8" fill="none" stroke="currentColor" stroke-width="6"/><path d="M40 50 L46 56 L60 42" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg><span class="name">No More Slop</span><span class="caption">toolbar 16px</span></div>
+    </div>
+
+    <!-- 12: Keyhole / exit -->
+    <div class="card">
+      <div class="card-title"><h3>12 — Exit door</h3><span class="tag">way out of the feed</span></div>
+      <p>Rounded square with an arrow exiting. "Get out of the scroll." Clean escape metaphor.</p>
+      <div class="previews">
+        <div class="preview light"><svg viewBox="0 0 100 100"><rect x="8" y="8" width="64" height="84" rx="22" fill="currentColor"/><path d="M52 50 L88 50 M74 36 L88 50 L74 64" stroke="currentColor" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg></div>
+        <div class="preview dark"><svg viewBox="0 0 100 100"><rect x="8" y="8" width="64" height="84" rx="22" fill="currentColor"/><path d="M52 50 L88 50 M74 36 L88 50 L74 64" stroke="currentColor" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg></div>
+      </div>
+      <div class="small-row"><svg viewBox="0 0 100 100"><rect x="8" y="8" width="64" height="84" rx="22" fill="currentColor"/><path d="M52 50 L88 50 M74 36 L88 50 L74 64" stroke="currentColor" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg><span class="name">No More Slop</span><span class="caption">toolbar 16px</span></div>
+    </div>
+
+    <!-- 13: Zen enso -->
+    <div class="card">
+      <div class="card-title"><h3>13 — Zen enso</h3><span class="tag">calm brush circle</span></div>
+      <p>Hand-drawn zen circle (incomplete). Meditative, calm. Most "wellbeing app" of the set.</p>
+      <div class="previews">
+        <div class="preview light"><svg viewBox="0 0 100 100"><path d="M32 22 Q78 22 82 62 Q78 84 48 84 Q18 84 16 56 Q14 32 36 22" fill="none" stroke="currentColor" stroke-width="14" stroke-linecap="round"/></svg></div>
+        <div class="preview dark"><svg viewBox="0 0 100 100"><path d="M32 22 Q78 22 82 62 Q78 84 48 84 Q18 84 16 56 Q14 32 36 22" fill="none" stroke="currentColor" stroke-width="14" stroke-linecap="round"/></svg></div>
+      </div>
+      <div class="small-row"><svg viewBox="0 0 100 100"><path d="M32 22 Q78 22 82 62 Q78 84 48 84 Q18 84 16 56 Q14 32 36 22" fill="none" stroke="currentColor" stroke-width="14" stroke-linecap="round"/></svg><span class="name">No More Slop</span><span class="caption">toolbar 16px</span></div>
+    </div>
+
+    <!-- 14: Pixel glitch -->
+    <div class="card">
+      <div class="card-title"><h3>14 — Glitch square</h3><span class="tag">feed corrupted</span></div>
+      <p>Rounded square broken into misaligned pixel blocks. Says "your feed is broken now."</p>
+      <div class="previews">
+        <div class="preview light"><svg viewBox="0 0 100 100"><rect x="8" y="8" width="40" height="40" rx="8" fill="currentColor"/><rect x="54" y="12" width="36" height="36" rx="8" fill="currentColor" opacity="0.6"/><rect x="12" y="54" width="36" height="36" rx="8" fill="currentColor" opacity="0.6"/><rect x="52" y="52" width="40" height="40" rx="8" fill="currentColor"/></svg></div>
+        <div class="preview dark"><svg viewBox="0 0 100 100"><rect x="8" y="8" width="40" height="40" rx="8" fill="currentColor"/><rect x="54" y="12" width="36" height="36" rx="8" fill="currentColor" opacity="0.6"/><rect x="12" y="54" width="36" height="36" rx="8" fill="currentColor" opacity="0.6"/><rect x="52" y="52" width="40" height="40" rx="8" fill="currentColor"/></svg></div>
+      </div>
+      <div class="small-row"><svg viewBox="0 0 100 100"><rect x="8" y="8" width="40" height="40" rx="8" fill="currentColor"/><rect x="54" y="12" width="36" height="36" rx="8" fill="currentColor" opacity="0.6"/><rect x="12" y="54" width="36" height="36" rx="8" fill="currentColor" opacity="0.6"/><rect x="52" y="52" width="40" height="40" rx="8" fill="currentColor"/></svg><span class="name">No More Slop</span><span class="caption">toolbar 16px</span></div>
+    </div>
+
+    <!-- 15: Play sliced -->
+    <div class="card">
+      <div class="card-title"><h3>15 — Play sliced</h3><span class="tag">anti-video, direct</span></div>
+      <p>Play triangle with a clean slash through it. Direct "no video feed" — instantly legible.</p>
+      <div class="previews">
+        <div class="preview light"><svg viewBox="0 0 100 100"><rect x="8" y="8" width="84" height="84" rx="22" fill="currentColor"/><path d="M38 30 L68 50 L38 70 Z" fill="#f6f3ec"/><path d="M22 78 L78 22" stroke="#141416" stroke-width="10" stroke-linecap="round"/><path d="M22 78 L78 22" stroke="#f6f3ec" stroke-width="6" stroke-linecap="round"/></svg></div>
+        <div class="preview dark"><svg viewBox="0 0 100 100"><rect x="8" y="8" width="84" height="84" rx="22" fill="currentColor"/><path d="M38 30 L68 50 L38 70 Z" fill="#141416"/><path d="M22 78 L78 22" stroke="#f6f3ec" stroke-width="10" stroke-linecap="round"/><path d="M22 78 L78 22" stroke="#141416" stroke-width="6" stroke-linecap="round"/></svg></div>
+      </div>
+      <div class="small-row"><svg viewBox="0 0 100 100"><rect x="8" y="8" width="84" height="84" rx="22" fill="currentColor"/><path d="M38 30 L68 50 L38 70 Z" fill="#f6f3ec"/><path d="M22 78 L78 22" stroke="#141416" stroke-width="10" stroke-linecap="round"/><path d="M22 78 L78 22" stroke="#f6f3ec" stroke-width="6" stroke-linecap="round"/></svg><span class="name">No More Slop</span><span class="caption">toolbar 16px</span></div>
+    </div>
+
+    <!-- 16: Sprout / growth -->
+    <div class="card">
+      <div class="card-title"><h3>16 — Sprout</h3><span class="tag">grow instead of scroll</span></div>
+      <p>Leafy sprout from a base. "Grow instead of doom-scroll." Forest-app energy, wholesome.</p>
+      <div class="previews">
+        <div class="preview light colored-green"><svg viewBox="0 0 100 100"><path d="M50 82 L50 50" stroke="currentColor" stroke-width="8" stroke-linecap="round"/><path d="M50 50 Q32 40 30 24 Q48 30 52 46" fill="currentColor"/><path d="M50 50 Q68 42 72 28 Q54 32 50 48" fill="currentColor"/><path d="M30 82 L70 82" stroke="currentColor" stroke-width="8" stroke-linecap="round"/></svg></div>
+        <div class="preview dark"><svg viewBox="0 0 100 100"><path d="M50 82 L50 50" stroke="currentColor" stroke-width="8" stroke-linecap="round"/><path d="M50 50 Q32 40 30 24 Q48 30 52 46" fill="currentColor"/><path d="M50 50 Q68 42 72 28 Q54 32 50 48" fill="currentColor"/><path d="M30 82 L70 82" stroke="currentColor" stroke-width="8" stroke-linecap="round"/></svg></div>
+      </div>
+      <div class="small-row"><svg viewBox="0 0 100 100"><path d="M50 82 L50 50" stroke="currentColor" stroke-width="8" stroke-linecap="round"/><path d="M50 50 Q32 40 30 24 Q48 30 52 46" fill="currentColor"/><path d="M50 50 Q68 42 72 28 Q54 32 50 48" fill="currentColor"/><path d="M30 82 L70 82" stroke="currentColor" stroke-width="8" stroke-linecap="round"/></svg><span class="name">No More Slop</span><span class="caption">toolbar 16px</span></div>
+    </div>
+
+  </div>
+
+  <h2 class="section">Round 3 · Research-backed ★</h2>
+  <p class="sub">Agent research on Chrome Web Store focus-category winners: deep green or teal on cream, single bold silhouette. These match the pattern.</p>
+
+  <div class="grid">
+
+    <!-- 20: Severed feed (research-recommended concept) -->
+    <div class="card">
+      <div class="card-title"><h3>20 — Severed feed ★</h3><span class="tag">research pick</span></div>
+      <p>Vertical feed card with a clean horizontal cut. Direct, unambiguous, reads great at 16px. Research explicitly recommended this shape for the category.</p>
+      <div class="previews">
+        <div class="preview colored-green"><svg viewBox="0 0 100 100"><rect x="28" y="14" width="44" height="72" rx="10" fill="none" stroke="currentColor" stroke-width="7"/><rect x="12" y="46" width="76" height="8" rx="4" fill="currentColor"/></svg></div>
+        <div class="preview dark"><svg viewBox="0 0 100 100" style="color: #5eead4"><rect x="28" y="14" width="44" height="72" rx="10" fill="none" stroke="currentColor" stroke-width="7"/><rect x="12" y="46" width="76" height="8" rx="4" fill="currentColor"/></svg></div>
+      </div>
+      <div class="small-row"><svg viewBox="0 0 100 100" style="color: #2e7d32"><rect x="28" y="14" width="44" height="72" rx="10" fill="none" stroke="currentColor" stroke-width="7"/><rect x="12" y="46" width="76" height="8" rx="4" fill="currentColor"/></svg><span class="name">No More Slop</span><span class="caption">toolbar 16px</span></div>
+    </div>
+
+    <!-- 21: Eye closing (research-recommended) -->
+    <div class="card">
+      <div class="card-title"><h3>21 — Eye closed ★</h3><span class="tag">research pick</span></div>
+      <p>Stylized eye with lid lowered. "Look away from the feed." Calm, meditative, distinctive silhouette at 16px.</p>
+      <div class="previews">
+        <div class="preview colored-mint"><svg viewBox="0 0 100 100"><path d="M12 52 Q50 84 88 52" fill="none" stroke="currentColor" stroke-width="9" stroke-linecap="round"/><path d="M26 54 L28 64 M50 62 L50 72 M74 54 L72 64" stroke="currentColor" stroke-width="7" stroke-linecap="round"/></svg></div>
+        <div class="preview dark"><svg viewBox="0 0 100 100" style="color: #5eead4"><path d="M12 52 Q50 84 88 52" fill="none" stroke="currentColor" stroke-width="9" stroke-linecap="round"/><path d="M26 54 L28 64 M50 62 L50 72 M74 54 L72 64" stroke="currentColor" stroke-width="7" stroke-linecap="round"/></svg></div>
+      </div>
+      <div class="small-row"><svg viewBox="0 0 100 100" style="color: #0f766e"><path d="M12 52 Q50 84 88 52" fill="none" stroke="currentColor" stroke-width="9" stroke-linecap="round"/><path d="M26 54 L28 64 M50 62 L50 72 M74 54 L72 64" stroke="currentColor" stroke-width="7" stroke-linecap="round"/></svg><span class="name">No More Slop</span><span class="caption">toolbar 16px</span></div>
+    </div>
+
+    <!-- 22: Broken loop GREEN (recolor of #4) -->
+    <div class="card">
+      <div class="card-title"><h3>22 — Broken loop, forest green ★</h3><span class="tag">research pick</span></div>
+      <p>Concept #4 in the category-winning green. Matches "severed infinite-scroll loop" exactly per research, in the palette that performs best.</p>
+      <div class="previews">
+        <div class="preview colored-green"><svg viewBox="0 0 100 100"><path d="M50 14 a36 36 0 1 1 -25.46 10.54" fill="none" stroke="currentColor" stroke-width="11" stroke-linecap="round"/></svg></div>
+        <div class="preview dark"><svg viewBox="0 0 100 100" style="color: #86efac"><path d="M50 14 a36 36 0 1 1 -25.46 10.54" fill="none" stroke="currentColor" stroke-width="11" stroke-linecap="round"/></svg></div>
+      </div>
+      <div class="small-row"><svg viewBox="0 0 100 100" style="color: #2e7d32"><path d="M50 14 a36 36 0 1 1 -25.46 10.54" fill="none" stroke="currentColor" stroke-width="11" stroke-linecap="round"/></svg><span class="name">No More Slop</span><span class="caption">toolbar 16px</span></div>
+    </div>
+
+  </div>
+
+  <h2 class="section">Round 4 · Metaphor directions</h2>
+  <p class="sub">Symbolic marks in palettes that fit the concept. Each is a starting point — we'd refine the chosen direction.</p>
+
+  <div class="grid">
+
+    <!-- 23: Anchor -->
+    <div class="card">
+      <div class="card-title"><h3>23 — Anchor</h3><span class="tag">stay grounded</span></div>
+      <p>"Anchor yourself to what matters." Stable, purposeful. Works well in deep navy — nautical, trustworthy.</p>
+      <div class="previews">
+        <div class="preview" style="background:#f1ede3;border:1px solid #e0d9c8"><svg viewBox="0 0 100 100" style="color:#1e3a5f"><circle cx="50" cy="22" r="7" fill="none" stroke="currentColor" stroke-width="6"/><path d="M50 30 L50 72" stroke="currentColor" stroke-width="7" stroke-linecap="round"/><rect x="32" y="38" width="36" height="6" rx="3" fill="currentColor"/><path d="M50 72 Q50 82 32 82 Q22 82 22 72" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round"/><path d="M50 72 Q50 82 68 82 Q78 82 78 72" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round"/></svg></div>
+        <div class="preview" style="background:#0f172a"><svg viewBox="0 0 100 100" style="color:#fbbf24"><circle cx="50" cy="22" r="7" fill="none" stroke="currentColor" stroke-width="6"/><path d="M50 30 L50 72" stroke="currentColor" stroke-width="7" stroke-linecap="round"/><rect x="32" y="38" width="36" height="6" rx="3" fill="currentColor"/><path d="M50 72 Q50 82 32 82 Q22 82 22 72" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round"/><path d="M50 72 Q50 82 68 82 Q78 82 78 72" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round"/></svg></div>
+      </div>
+      <div class="small-row"><svg viewBox="0 0 100 100" style="color:#1e3a5f"><circle cx="50" cy="22" r="7" fill="none" stroke="currentColor" stroke-width="6"/><path d="M50 30 L50 72" stroke="currentColor" stroke-width="7" stroke-linecap="round"/><rect x="32" y="38" width="36" height="6" rx="3" fill="currentColor"/><path d="M50 72 Q50 82 32 82 Q22 82 22 72" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round"/><path d="M50 72 Q50 82 68 82 Q78 82 78 72" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round"/></svg><span class="name">No More Slop</span><span class="caption">toolbar 16px</span></div>
+    </div>
+
+    <!-- 24: Dove -->
+    <div class="card">
+      <div class="card-title"><h3>24 — Dove</h3><span class="tag">release &amp; peace</span></div>
+      <p>Flying dove — "let the feed go." Calm, wellbeing-adjacent. Risk: feels spiritual/religious to some users.</p>
+      <div class="previews">
+        <div class="preview colored-mint"><svg viewBox="0 0 100 100" style="color:#0f766e"><path d="M16 60 C30 46 52 42 64 50 L82 38 L78 54 L88 60 L70 66 L64 80 C52 78 32 74 22 64 Z" fill="currentColor"/><circle cx="70" cy="58" r="2" fill="#e6fffa"/></svg></div>
+        <div class="preview" style="background:#0f172a"><svg viewBox="0 0 100 100" style="color:#f6f3ec"><path d="M16 60 C30 46 52 42 64 50 L82 38 L78 54 L88 60 L70 66 L64 80 C52 78 32 74 22 64 Z" fill="currentColor"/><circle cx="70" cy="58" r="2" fill="#0f172a"/></svg></div>
+      </div>
+      <div class="small-row"><svg viewBox="0 0 100 100" style="color:#0f766e"><path d="M16 60 C30 46 52 42 64 50 L82 38 L78 54 L88 60 L70 66 L64 80 C52 78 32 74 22 64 Z" fill="currentColor"/><circle cx="70" cy="58" r="2" fill="#e6fffa"/></svg><span class="name">No More Slop</span><span class="caption">toolbar 16px</span></div>
+    </div>
+
+    <!-- 25: Butterfly -->
+    <div class="card">
+      <div class="card-title"><h3>25 — Butterfly</h3><span class="tag">transform &amp; emerge</span></div>
+      <p>"Break free from the feed." Transformation metaphor. Warm coral color — inviting, a little soft.</p>
+      <div class="previews">
+        <div class="preview" style="background:#fff4e6;border:1px solid #ffe0b2"><svg viewBox="0 0 100 100" style="color:#e87a5d"><rect x="48" y="28" width="4" height="44" rx="2" fill="currentColor"/><path d="M48 30 Q28 18 18 32 Q16 46 34 52 Q44 50 48 42 Z" fill="currentColor"/><path d="M52 30 Q72 18 82 32 Q84 46 66 52 Q56 50 52 42 Z" fill="currentColor"/><path d="M48 56 Q34 62 28 76 Q38 82 48 74 Z" fill="currentColor"/><path d="M52 56 Q66 62 72 76 Q62 82 52 74 Z" fill="currentColor"/><path d="M48 28 L42 18" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M52 28 L58 18" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg></div>
+        <div class="preview" style="background:#141416"><svg viewBox="0 0 100 100" style="color:#fbbf24"><rect x="48" y="28" width="4" height="44" rx="2" fill="currentColor"/><path d="M48 30 Q28 18 18 32 Q16 46 34 52 Q44 50 48 42 Z" fill="currentColor"/><path d="M52 30 Q72 18 82 32 Q84 46 66 52 Q56 50 52 42 Z" fill="currentColor"/><path d="M48 56 Q34 62 28 76 Q38 82 48 74 Z" fill="currentColor"/><path d="M52 56 Q66 62 72 76 Q62 82 52 74 Z" fill="currentColor"/><path d="M48 28 L42 18" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M52 28 L58 18" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg></div>
+      </div>
+      <div class="small-row"><svg viewBox="0 0 100 100" style="color:#e87a5d"><rect x="48" y="28" width="4" height="44" rx="2" fill="currentColor"/><path d="M48 30 Q28 18 18 32 Q16 46 34 52 Q44 50 48 42 Z" fill="currentColor"/><path d="M52 30 Q72 18 82 32 Q84 46 66 52 Q56 50 52 42 Z" fill="currentColor"/><path d="M48 56 Q34 62 28 76 Q38 82 48 74 Z" fill="currentColor"/><path d="M52 56 Q66 62 72 76 Q62 82 52 74 Z" fill="currentColor"/><path d="M48 28 L42 18" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M52 28 L58 18" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg><span class="name">No More Slop</span><span class="caption">toolbar 16px</span></div>
+    </div>
+
+    <!-- 26: Sunrise -->
+    <div class="card">
+      <div class="card-title"><h3>26 — Sunrise</h3><span class="tag">fresh start, focus morning</span></div>
+      <p>Sun rising over horizon with rays. "New day, new focus." Warm amber — optimistic, energizing.</p>
+      <div class="previews">
+        <div class="preview" style="background:#fff4e6;border:1px solid #ffe0b2"><svg viewBox="0 0 100 100" style="color:#f59e0b"><path d="M26 60 A24 24 0 0 1 74 60 Z" fill="currentColor"/><rect x="12" y="64" width="76" height="5" rx="2" fill="currentColor"/><path d="M50 18 L50 26" stroke="currentColor" stroke-width="5" stroke-linecap="round"/><path d="M24 30 L30 36" stroke="currentColor" stroke-width="5" stroke-linecap="round"/><path d="M76 30 L70 36" stroke="currentColor" stroke-width="5" stroke-linecap="round"/><path d="M12 48 L20 48" stroke="currentColor" stroke-width="5" stroke-linecap="round"/><path d="M88 48 L80 48" stroke="currentColor" stroke-width="5" stroke-linecap="round"/></svg></div>
+        <div class="preview" style="background:#1e293b"><svg viewBox="0 0 100 100" style="color:#fbbf24"><path d="M26 60 A24 24 0 0 1 74 60 Z" fill="currentColor"/><rect x="12" y="64" width="76" height="5" rx="2" fill="currentColor"/><path d="M50 18 L50 26" stroke="currentColor" stroke-width="5" stroke-linecap="round"/><path d="M24 30 L30 36" stroke="currentColor" stroke-width="5" stroke-linecap="round"/><path d="M76 30 L70 36" stroke="currentColor" stroke-width="5" stroke-linecap="round"/><path d="M12 48 L20 48" stroke="currentColor" stroke-width="5" stroke-linecap="round"/><path d="M88 48 L80 48" stroke="currentColor" stroke-width="5" stroke-linecap="round"/></svg></div>
+      </div>
+      <div class="small-row"><svg viewBox="0 0 100 100" style="color:#f59e0b"><path d="M26 60 A24 24 0 0 1 74 60 Z" fill="currentColor"/><rect x="12" y="64" width="76" height="5" rx="2" fill="currentColor"/><path d="M50 18 L50 26" stroke="currentColor" stroke-width="5" stroke-linecap="round"/><path d="M24 30 L30 36" stroke="currentColor" stroke-width="5" stroke-linecap="round"/><path d="M76 30 L70 36" stroke="currentColor" stroke-width="5" stroke-linecap="round"/><path d="M12 48 L20 48" stroke="currentColor" stroke-width="5" stroke-linecap="round"/><path d="M88 48 L80 48" stroke="currentColor" stroke-width="5" stroke-linecap="round"/></svg><span class="name">No More Slop</span><span class="caption">toolbar 16px</span></div>
+    </div>
+
+    <!-- 27: Monitor with lock -->
+    <div class="card">
+      <div class="card-title"><h3>27 — Monitor locked</h3><span class="tag">most literal</span></div>
+      <p>Desktop monitor with a padlock inside. Explicit, functional, no metaphor needed. Forest-green palette.</p>
+      <div class="previews">
+        <div class="preview colored-green"><svg viewBox="0 0 100 100" style="color:#2e7d32"><rect x="10" y="18" width="80" height="54" rx="6" fill="currentColor"/><rect x="18" y="26" width="64" height="38" rx="2" fill="#e8f5e9"/><rect x="42" y="75" width="16" height="8" fill="currentColor"/><rect x="28" y="83" width="44" height="5" rx="2" fill="currentColor"/><rect x="40" y="42" width="20" height="16" rx="2" fill="currentColor"/><path d="M44 42 L44 36 A6 6 0 0 1 56 36 L56 42" stroke="currentColor" stroke-width="4" fill="none"/></svg></div>
+        <div class="preview" style="background:#0f172a"><svg viewBox="0 0 100 100" style="color:#86efac"><rect x="10" y="18" width="80" height="54" rx="6" fill="currentColor"/><rect x="18" y="26" width="64" height="38" rx="2" fill="#0f172a"/><rect x="42" y="75" width="16" height="8" fill="currentColor"/><rect x="28" y="83" width="44" height="5" rx="2" fill="currentColor"/><rect x="40" y="42" width="20" height="16" rx="2" fill="currentColor"/><path d="M44 42 L44 36 A6 6 0 0 1 56 36 L56 42" stroke="currentColor" stroke-width="4" fill="none"/></svg></div>
+      </div>
+      <div class="small-row"><svg viewBox="0 0 100 100" style="color:#2e7d32"><rect x="10" y="18" width="80" height="54" rx="6" fill="currentColor"/><rect x="18" y="26" width="64" height="38" rx="2" fill="#e8f5e9"/><rect x="42" y="75" width="16" height="8" fill="currentColor"/><rect x="28" y="83" width="44" height="5" rx="2" fill="currentColor"/><rect x="40" y="42" width="20" height="16" rx="2" fill="currentColor"/><path d="M44 42 L44 36 A6 6 0 0 1 56 36 L56 42" stroke="currentColor" stroke-width="4" fill="none"/></svg><span class="name">No More Slop</span><span class="caption">toolbar 16px</span></div>
+    </div>
+
+  </div>
+
+  <h2 class="section">Round 5 · Color-branded experiments</h2>
+  <p class="sub">Same marks, warmer palettes. Most focus-category winners use a distinctive color (Forest = green, Opal = peach gradient).</p>
+
+  <div class="grid">
+
+    <!-- 17: Pause in cream/terracotta -->
+    <div class="card">
+      <div class="card-title"><h3>17 — Pause, warm</h3><span class="tag">terracotta on cream</span></div>
+      <p>Pause mark #1 in a warmer palette. Stands out on Chrome's white UI strip.</p>
+      <div class="previews">
+        <div class="preview colored-cream"><svg viewBox="0 0 100 100"><rect x="8" y="8" width="84" height="84" rx="22" fill="currentColor"/><rect x="36" y="28" width="10" height="44" rx="4" fill="#fff4e6"/><rect x="54" y="28" width="10" height="44" rx="4" fill="#fff4e6"/></svg></div>
+        <div class="preview colored-navy"><svg viewBox="0 0 100 100"><rect x="8" y="8" width="84" height="84" rx="22" fill="currentColor"/><rect x="36" y="28" width="10" height="44" rx="4" fill="#0f172a"/><rect x="54" y="28" width="10" height="44" rx="4" fill="#0f172a"/></svg></div>
+      </div>
+      <div class="small-row"><svg viewBox="0 0 100 100" style="color: #c2410c"><rect x="8" y="8" width="84" height="84" rx="22" fill="currentColor"/><rect x="36" y="28" width="10" height="44" rx="4" fill="#fff4e6"/><rect x="54" y="28" width="10" height="44" rx="4" fill="#fff4e6"/></svg><span class="name">No More Slop</span><span class="caption">toolbar 16px</span></div>
+    </div>
+
+    <!-- 18: Sprout green (already colored above, skip) -->
+    <!-- 19: Broken loop in mint -->
+    <div class="card">
+      <div class="card-title"><h3>18 — Broken loop, mint</h3><span class="tag">calm teal tone</span></div>
+      <p>Break-the-loop mark in a calm mint/teal. Feels "Serene" / wellbeing.</p>
+      <div class="previews">
+        <div class="preview colored-mint"><svg viewBox="0 0 100 100"><path d="M50 14 a36 36 0 1 1 -25.46 10.54" fill="none" stroke="currentColor" stroke-width="11" stroke-linecap="round"/></svg></div>
+        <div class="preview dark"><svg viewBox="0 0 100 100" style="color: #5eead4"><path d="M50 14 a36 36 0 1 1 -25.46 10.54" fill="none" stroke="currentColor" stroke-width="11" stroke-linecap="round"/></svg></div>
+      </div>
+      <div class="small-row"><svg viewBox="0 0 100 100" style="color: #0f766e"><path d="M50 14 a36 36 0 1 1 -25.46 10.54" fill="none" stroke="currentColor" stroke-width="11" stroke-linecap="round"/></svg><span class="name">No More Slop</span><span class="caption">toolbar 16px</span></div>
+    </div>
+
+    <!-- 20: Navy + amber pause -->
+    <div class="card">
+      <div class="card-title"><h3>19 — Navy + amber</h3><span class="tag">premium / dark-mode-first</span></div>
+      <p>Deep navy square with an amber mark. Feels premium, distinctive on Chrome's gray toolbar.</p>
+      <div class="previews">
+        <div class="preview colored-navy"><svg viewBox="0 0 100 100"><rect x="8" y="8" width="84" height="84" rx="22" fill="currentColor"/><path d="M50 14 a36 36 0 1 1 -25.46 10.54" fill="none" stroke="#0f172a" stroke-width="11" stroke-linecap="round"/></svg></div>
+        <div class="preview light"><svg viewBox="0 0 100 100" style="color: #0f172a"><rect x="8" y="8" width="84" height="84" rx="22" fill="currentColor"/><path d="M50 14 a36 36 0 1 1 -25.46 10.54" fill="none" stroke="#fbbf24" stroke-width="11" stroke-linecap="round"/></svg></div>
+      </div>
+      <div class="small-row"><svg viewBox="0 0 100 100" style="color: #0f172a"><rect x="8" y="8" width="84" height="84" rx="22" fill="currentColor"/><path d="M50 14 a36 36 0 1 1 -25.46 10.54" fill="none" stroke="#fbbf24" stroke-width="11" stroke-linecap="round"/></svg><span class="name">No More Slop</span><span class="caption">toolbar 16px</span></div>
+    </div>
+
+  </div>
+
+</body>
+</html>
